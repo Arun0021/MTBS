@@ -6,6 +6,20 @@ Steps to Follow:
 2  Clone the Repository as it is.
 3. Open VS Code or Any code editor where you can run java files
 4. Create a database and tables using file "mysql_setup.txt" and run the queries just by copy pasting from that text file one by one.
+Note: Update the {database_name , user_name, user_password} in file "DatabaseOperation.java"
+    for example: 
+                 static final String DB_URL = "jdbc:mysql://localhost:3306/mtbs";
+                 static final String USER = "root";
+                 static final String PASS = "pankaj67";
+    here my database_name = mtbs , user_name = root , user_password = pankaj67
+    update it to
+                 static final String DB_URL = "jdbc:mysql://localhost:3306/mtbs";
+                 static final String USER = "your_username";
+                 static final String PASS = "your_password";
+    so that the running files can access the database
+
+    Tip: All SQL queries are listed in file "mysql_Setup.txt" so that you can easily setup the database required for this project.
+
 5. Compile the java files by using commands given in "commands.txt" and Run the Code.
 
 Description:
