@@ -1,0 +1,20 @@
+
+// To remove previously Compiled Files
+
+   " rm -rf MTBS/*.class "
+
+
+// To compile Files
+
+   " javac -d . Movie.java MovieTicketDriver.java DatabaseOperation.java Admin.java User.java Theater.java  "
+
+
+// compile all at once using
+
+   " javac -d . *.java "
+
+
+// Run the code using this command
+
+   " java -cp .:mysql-connector-j-9.2.0.jar MTBS.MovieTicketDriver "
+

@@ -1,0 +1,58 @@
+create database mtbs;
+
+use mtbs;
+
+create table Users (
+UserID INT auto_increment,
+Username varchar(255),
+Password varchar(255),
+Name varchar(255),
+Phone varchar(15),
+Address varchar(255),
+Primary key (UserID)
+);
+
+create table Admin (
+AdminID int auto_increment,
+Username varchar(255),
+Password varchar(255),
+Primary key (AdminID)
+);
+
+create table Theaters(
+TheaterID int auto_increment,
+Location varchar(255),
+SeatingCapacity int,
+Primary key (TheaterID)
+);
+
+create table Movies(
+MovieID int auto_increment,
+Title varchar(255),
+Genre varchar(255),
+Rating Decimal(3,2),
+Duration int,
+Synopsis text,
+primary key (MovieID)
+);
+
+create table Showtimes(
+ShowtimeID int auto_increment,
+MovieID int,
+TheaterID int,
+Showtime datetime,
+primary key (ShowtimeID),
+foreign key (MovieID) references Movies(MovieID),
+foreign key (TheaterID) references Theaters(TheaterID)
+);
+
+create table Bookings(
+BookingID int auto_increment,
+UserID int,
+ShowtimeID int,
+SelectedSeats int,
+PaymentStatus Boolean,
+primary key (BookingID),
+foreign key (UserID) references Users(UserID),
+foreign key (ShowtimeID) references Showtimes(ShowtimeID)
+);
