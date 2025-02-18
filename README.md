@@ -1,26 +1,34 @@
 # MTBS
-Movie Ticket Booking System
-MTBS Assignment - Movie Ticket Booking System
-This project is a Movie Ticket Booking System (MTBS) that demonstrates basic functionalities such as booking movie tickets, user authentication, and managing movie information through a MySQL database.
+# Movie Ticket Booking System (MTBS)
 
-Steps to Follow:
-1. Required MySQL Workbench installed in your system
-2  Clone the Repository as it is.
-3. Open VS Code or Any code editor where you can run java files
-4. Create a database and tables using file "mysql_setup.txt" and run the queries just by copy pasting from that text file one by one.
-Note: Update the {database_name , user_name, user_password} in file "DatabaseOperation.java"
-    for example: 
-                 static final String DB_URL = "jdbc:mysql://localhost:3306/mtbs";
-                 static final String USER = "root";
-                 static final String PASS = "pankaj67";
-    here my database_name = mtbs , user_name = root , user_password = pankaj67
-    update it to
-                 static final String DB_URL = "jdbc:mysql://localhost:3306/mtbs";
-                 static final String USER = "your_username";
-                 static final String PASS = "your_password";
-    so that the running files can access the database
+## Introduction
 
-    Tip: All SQL queries are listed in file "mysql_Setup.txt" so that you can easily setup the database required for this project.
+The **Movie Ticket Booking System (MTBS)** is a Java-based application designed to simulate the movie ticket booking process. It allows users to browse available movies, book tickets, and manage reservations. Additionally, it provides administrators with functionalities to add and manage movie listings, showtimes, theaters, and bookings.
+
+This project uses **MySQL** as the database system to store movie details, user information, and booking records. The application communicates with the MySQL database using **JDBC (Java Database Connectivity)**.
+
+---
+
+## Steps to Follow
+
+### 1. Install MySQL Workbench
+Make sure **MySQL Workbench** is installed on your system for managing the MySQL database.
+
+### 2. Clone the Repository
+Clone the repository as it is to your local machine.
+
+### 3. Open Code Editor
+Open **VS Code** or any other code editor where you can run Java files.
+
+### 4. Set Up the Database
+- Create the database and tables by using the SQL queries in the `mysql_setup.txt` file. 
+- Copy and paste the queries one by one into MySQL Workbench to set up the required database structure.
+
+**Note:** Update your database credentials in the `DatabaseOperation.java` file:
+```java
+static final String DB_URL = "jdbc:mysql://localhost:3306/mtbs";
+static final String USER = "your_username";
+static final String PASS = "your_password";
 
 5. Compile the java files by using commands given in "commands.txt" and Run the Code.
 
