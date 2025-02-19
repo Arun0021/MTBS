@@ -25,12 +25,14 @@ Open **VS Code** or any other code editor where you can run Java files.
 - Copy and paste the queries one by one into MySQL Workbench to set up the required database structure.
 
 **Note:** Update your database credentials in the `DatabaseOperation.java` file:
-```java
-static final String DB_URL = "jdbc:mysql://localhost:3306/mtbs";
-static final String USER = "your_username";
-static final String PASS = "your_password";
 
-5. Compile the java files by using commands given in "commands.txt" and Run the Code.
+    static final String DB_URL = "jdbc:mysql://localhost:3306/mtbs";
+
+    static final String USER = "your_username";
+
+    static final String PASS = "your_password";
+
+### 5. Compile the java files by using commands given in "commands.txt" and Run the Code.
 
 Description:
 The Movie Ticket Booking System (MTBS) is a Java-based application designed to facilitate the booking of movie tickets. This system is created to simulate a real-world movie ticket booking experience, allowing users to browse movies, book tickets, and manage their reservations, while also providing a platform for administrators to add or manage movie listings.
@@ -61,3 +63,8 @@ Create: Admins can create new theaters and define screen layouts and seat arrang
 
 Check: Users can check their current bookings.
 Cancel: Users have the ability to cancel their bookings if needed.
+
+---
+
+
+
